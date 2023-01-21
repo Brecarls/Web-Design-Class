@@ -1,0 +1,2 @@
+Here I created an Index file to hold the base of the website and use the helper.js file to disposite the writing into the website.
+Lastly the CSS file is used to change the font and color of the text.
