@@ -1,0 +1,39 @@
+table{
+    border: 1px solid black;
+    padding: 0px;
+}
+
+td{
+    width:20px;
+    height: 20px;
+    background-color: black;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.letter{
+    background-color: white;
+
+}
+
+.text{
+    color: black;
+    background-color: white;
+    width: 400px;
+    height: 20px;
+}
+
+
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
