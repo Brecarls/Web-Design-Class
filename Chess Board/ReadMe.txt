@@ -1,0 +1,1 @@
+This assignment we went over creating a chessboard. We were able to create elements and then loop the logic to create 64 squares. Then we needed to change the color of ever other square by using logic in the loop to check and see if i was divisible by 2. The output is a chessboard that is black and gray to give the user some distinction.

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+</head>
+<style>
+#chessboard_size {
+   width: 400px;
+   height: 400px;
+}
+.chess-square {
+   float: left;
+   width: 50px;
+   height: 50px;
+   background-color: gray;
+}
+</style>
+</head>
+<body>
+
+<div id="chessboard_size">
+</div>
+<script>
+   // The script used to create the chessboard
+   var chessboard_size = document.getElementById('chessboard_size');
+   //Loop the logic to make 64 tiles
+   for (var i = 0; i < 8; i++) {
+      for (var j = 0; j < 8; j++) {
+         //Creating a div for each square
+         var chess_square_var = document.createElement('div');
+         chess_square_var.className = 'chess-square';
+         // Change color based on what square is created
+         if ((i + j) % 2 == 0) {
+            chess_square_var.style.backgroundColor = '#000';
+         }
+         chessboard_size.appendChild(chess_square_var);
+      }
+   }
+</script>
+</body>
+</html>
