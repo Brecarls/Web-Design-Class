@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers</title>
+</head>
+<style>
+#checkers {
+   width: 420px;
+   height: 420px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   border: 1px solid black;
+}
+.square {
+   border: 1px solid black;
+   width: 50px;
+   height: 50px;
+   background-color: gray;
+}
+
+.black{
+   background-color: darkgray;
+}
+
+.checker{
+   width: 45px;
+   height: 45px;
+   margin: 2.5px;
+   border-radius: 50%;
+   box-shadow: 4px 4px 4px gray;
+}
+
+.checker-w{
+   background-color: ivory;
+}
+
+.checker-b{
+   background-color: black;
+}
+
+
+</style>
+</head>
+<body>
+
+<span id="selectedSquare" style="display: none;"></span>
+<script src="checkers.js"></script>
+   <script>
+      createBoard();
+   </script>
+</body>
+</html>
