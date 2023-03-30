@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='Whackamole.css'>
+    <title> Whackamole </title>
+  </head>
+  <body>
+    <h1>Whackamole Game</h1>
+    <p>Score: <div id="score"></div></p>
+
+    <div id="gameboard">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+    </div>
+
+        <input type="button" onclick="startGame();" value="Start Game!">
+
+        <script src="Whackamole.js"></script>
+
+
+        <div id="textBox">
+            <h3> Here we can change the background color using the button below </h3>
+
+        </div>
+
+    <button id="myBtn">Change To Blue</button>
+    <button id="myBtn2">Change To Red</button>
+
+
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function() {
+            document.getElementById("gameboard").style.backgroundColor = "lightblue";
+        });
+
+        document.getElementById("myBtn2").addEventListener("click", function() {
+            document.getElementById("gameboard").style.backgroundColor = "red";
+        });
+    </script>
+
+
+  </body>
+  </html>
